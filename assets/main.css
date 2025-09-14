@@ -1,0 +1,40 @@
+body {
+    font-family: var(--mainFont);
+  
+
+}
+.header{
+
+    padding: 57px;
+
+} 
+.header ul{
+    display: flex;
+    gap: 36px;
+    list-style: none;
+}
+.list .active{
+  color: var(--primary);
+ 
+}
+ 
+.search form{
+     border: 1px solid #E7E6EF ;
+border-radius:5px ;
+}
+
+.search input{
+    border: none;
+    outline: none;
+}
+
+.search button{
+background-color: #FB2E86;
+padding: 8px 15px;
+ border: none;
+    outline: none;
+
+}
+
+
+
