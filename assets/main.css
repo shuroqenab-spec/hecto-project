@@ -33,8 +33,37 @@ background-color: #FB2E86;
 padding: 8px 15px;
  border: none;
     outline: none;
+/*end header*/
+
+
+/*start footer*/
+}
+.footer{
+    background-color: #EEEFFB;
+    padding: 55px 0 ;
 
 }
 
+.footer .left-side{
+   gap: 35px;
+   align-items: flex-start;
+}
+.footer .right-side{
+   width: 55%;
+}
+.footer-item {
+    gap: 45px;
+    
+}
+.footer a , .address-info{ 
+    color: #8A8FB9;
+}
+.footer .right-side h2{
+   padding-bottom: 46px;
+}
+.footer .left-side input{
+padding: 8px 15px;
+ border: none;
+    outline: none;
 
-
+}

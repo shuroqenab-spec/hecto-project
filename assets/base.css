@@ -44,3 +44,31 @@ ul{
 .text-white{
   color: #fff;
 }
+.d-flex{
+  display: flex;
+
+}
+.flex-direction{
+  flex-direction: column;
+}
+.gap-1{
+  gap: 5px;
+}
+.gap-2{
+
+  gap: 10px;
+}
+.gap-3{
+  gap: 15px;
+}
+.gap-4{
+  gap: 20px;
+}
+.gap-5{
+  gap: 25px;
+
+}.flex-direction-row{
+  flex-direction: row;
+}
+.align-items{
+  align-items: flex-start;}
