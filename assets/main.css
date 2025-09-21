@@ -1,7 +1,7 @@
 body {
     font-family: var(--mainFont);
 }
-
+/*start header*/
 .header {
     padding: 57px;
 }
@@ -32,6 +32,44 @@ body {
     border: none;
     outline: none;
 }
+/*ena header*/
+/*start Featured Products*/
+.Featured-Products{
+    padding: 50px 0;
+}
+.Featured-Products h2 {
+    margin-bottom: 48px;
+  
+}
+.Featured-Products .row {
+    justify-content: flex-start;
+    gap: 15px;
+}
+.Featured-Products .product {
+    flex-shrink: 0;
+    flex-basis: 250px;
+    flex-grow:1 ;
+    box-shadow:0px 4px 4px #00000040;
+    border-radius: 4px;
+
+   
+}
+.product .img{
+    background-color: #F6F7FB;
+    padding: 25px;
+    height: 236px;
+    object-fit: contain;
+}
+.product-details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+
+/*end Featured Products*/
+/*start news letter*/
  .news-letter {
        background-image: url("/image/p.svg");
        padding: 175px 0;
@@ -41,8 +79,11 @@ body {
         color: #151875;
         margin-bottom: 38px;
         font-size: 36px;
+        
     }
     
+    /*end news letter*/
+    /*start clients*/
     .clients {
         padding: 50px 0;
     }
@@ -68,8 +109,8 @@ body {
         }
     }
 
+    /*end clients*/
     /*start footer*/
-}
 
 .footer {
     background-color: #eeeffb;
