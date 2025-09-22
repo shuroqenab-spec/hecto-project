@@ -14,6 +14,12 @@ ul {
   --mainFont: "Lato", sans-serif;
   --sucscess: #08d15f;
 }
+.text-primary {
+  color: var(--primary);
+}
+.text-secondary {
+  color: #151875;
+}
 .btn {
   border: none;
   outline: none;
@@ -75,6 +81,6 @@ ul {
 .text-right {
   text-align: right;
 }
-text-left {
+.text-left {
   text-align: left;
 }
