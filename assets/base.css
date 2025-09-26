@@ -41,7 +41,7 @@ ul {
   align-items: center;
 }
 .container {
-  width: calc(100% - 320px);
+  width: calc(100% - 367px);
   margin: auto;
 }
 
@@ -53,6 +53,9 @@ ul {
 }
 .flex-direction {
   flex-direction: column;
+}
+.flex-direction-row {
+  flex-direction: row;
 }
 .gap-1 {
   gap: 5px;
@@ -83,4 +86,7 @@ ul {
 }
 .text-left {
   text-align: left;
+}
+.justify-content {
+  justify-content: space-between;
 }
