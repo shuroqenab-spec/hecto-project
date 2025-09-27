@@ -34,6 +34,23 @@ body {
   outline: none;
 }
 
+.header .bar {
+  width: 15px;
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .header .list,
+  .header .search {
+    display: none;
+  }
+
+  .header .bar {
+    display: block;
+  }
+}
+
 /*end header*/
 /*start hero*/
 .hero {
@@ -87,6 +104,12 @@ body {
 .hero-btn {
   display: inline-block;
   align-self: flex-start;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero-content .hero-lamp {
+    display: none;
+  }
 }
 
 /*end hero*/
@@ -213,12 +236,126 @@ body {
   transition: all 0.6s;
 }
 
+@media screen and (max-width: 1428px) {
+  .Featured-Products .row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .Featured-Products .product {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
 /*end Featured Products*/
 
+/* start Leatest Products*/
+.Leatest-Products h2 {
+  margin-top: 128px;
+  margin-bottom: 19px;
+  color: #1a0b5b;
+}
+
+.l-product {
+  width: 360px;
+  position: relative;
+}
+
+.badge-img {
+  position: absolute;
+  top: 24px;
+  left: 18px;
+  opacity: 0;
+  transition: all 0.6s;
+}
+
+.l-product-icon {
+  position: absolute;
+  color: #2f1ac4;
+  width: 17px;
+  height: 17px;
+  margin-left: 15px;
+  margin-top: 146px;
+  opacity: 0;
+  transition: all 0.6s;
+}
+
+.list-Leatest-Products ul {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  list-style: none;
+  margin-bottom: 58px;
+}
+
+.l-product-icon a {
+  padding: 10px 20px;
+}
+
+.l-product-img {
+  padding: 35px 64px;
+  background-color: #f7f7f7;
+}
+
+.l-product-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px;
+  margin-bottom: 120px;
+  color: #151875;
+  margin-top: 15px;
+}
+
+.l-product-details .old-price {
+  color: var(--primary);
+  font-size: small;
+  text-decoration: line-through;
+}
+
+.l-product-details h3 {
+  border-bottom: 2px solid #eeeffb;
+  padding-bottom: 3px;
+}
+
+.l-product-2 .l-product-img {
+  padding: 44px 57px 7px 68px;
+}
+
+.l-product-3 .l-product-img {
+  padding: 61px 69px 8px 69px;
+}
+
+.l-product-4 .l-product-img {
+  padding: 0px 39px 7px 54px;
+}
+
+.l-product-5 .l-product-img {
+  padding: 14px 21px 7px 36px;
+}
+
+.l-product-6 .l-product-img {
+  padding: 16px 0px 7px 5px;
+}
+
+.l-product:hover .badge-img {
+  opacity: 1;
+}
+
+.l-product:hover .l-product-icon {
+  opacity: 1;
+}
+
+.l-product:hover .l-product-img {
+  background-color: #ffffff;
+}
+
+.list-item-l-product:hover a {
+  color: var(--primary);
+}
+
+/*end Leatest Products */
 
 /*start shopex offer*/
-
-
 
 .Shopex-Offer {
   padding: 50px 0;
@@ -234,26 +371,30 @@ body {
   gap: 25px;
 }
 
-.Shopex-Offer .offer{
+.Shopex-Offer .offer {
   flex-shrink: 0;
   flex-basis: 250px;
   flex-grow: 1;
   box-shadow: 0px 0px 3px #a5a5a540;
   border-radius: 4px;
 }
-.Shopex-Offer .offer img{
+
+.Shopex-Offer .offer img {
   object-fit: contain;
   padding: 45px 98px;
 }
-.Shopex-Offer .offer h3{
+
+.Shopex-Offer .offer h3 {
   color: #151875;
   margin-bottom: 20px;
 }
-.Shopex-Offer .offer p{
-  color: #72718F;
+
+.Shopex-Offer .offer p {
+  color: #72718f;
   margin-bottom: 25px;
 }
 
+/*end  shopex offer*/
 /*start trending products*/
 .trending-prodcts {
   padding: 50px 0;
@@ -311,6 +452,20 @@ body {
   margin-left: 5px;
 }
 
+@media screen and (max-width: 1370px) {
+  .trending-prodcts .tr-Product {
+    width: calc((100% - 60px) / 2);
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .trending-prodcts .tr-Product {
+    width: calc(100% - 60px);
+    margin-bottom: 60px;
+  }
+}
+
 /*end trending products*/
 /*start categories*/
 .Top-Categories h2 {
@@ -329,7 +484,7 @@ body {
   padding: 40px;
   border-radius: 50%;
   box-shadow: 1px 2px 12px #cbcbcb40;
-   transition: all 0.6s;
+  transition: all 0.6s;
 }
 
 .category h3 {
@@ -354,7 +509,7 @@ body {
   bottom: 11px;
   left: 30%;
   opacity: 0;
-   transition: all 0.6s;
+  transition: all 0.6s;
 }
 
 .category:hover .btn-cate-hover {
@@ -364,6 +519,7 @@ body {
 .category:hover .img {
   box-shadow: -6px 8px 0px #b48dd2;
 }
+
 /*end categories*/
 
 /*start news letter*/
