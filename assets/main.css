@@ -5,9 +5,7 @@ body {
 /*start header*/
 .header {
   padding: 57px;
-
 }
-
 
 .header ul {
   display: flex;
@@ -42,7 +40,6 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-
   .header .list,
   .header .search {
     display: none;
@@ -55,7 +52,6 @@ body {
   .header {
     justify-content: space-between;
   }
- 
 }
 
 /*end header*/
@@ -473,7 +469,7 @@ body {
   background-color: #f5f6f8;
   height: 244px;
 
-  width: 100%; 
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -502,17 +498,11 @@ body {
   margin-left: 5px;
 }
 
-@media screen and (max-width: 600px) {
-  .trending-products .row {
-    flex-direction: column;  
-    justify-content: center;      
-   
+@media screen and ( max-width: 600px ) {
+  .trending-prodcts .container {
+    width: calc(100% - 190px);
   }
-
 }
-
-
-
 
 /*end trending products*/
 /*start categories*/
@@ -677,8 +667,7 @@ body {
 }
 
 @media screen and (max-width: 1428px) {
-  .Leatest-Blog .cards {
-    flex-wrap: wrap;
+  .Leatest-Blog .row { 
     width: calc((100% - 40px) / 3);
     justify-content: center;
   }
@@ -687,6 +676,11 @@ body {
     max-width: fit-content;
     flex: none;
     justify-content: center;
+  }
+}
+@media screen and ( max-width: 600px ) {
+  .Leatest-Blog  .container {
+    width: calc(100% - 480px);
   }
 }
 
@@ -719,7 +713,6 @@ body {
 }
 
 @media screen and (max-width: 970px) {
-
   .footer .left-side,
   .footer .right-side {
     width: 100%;
